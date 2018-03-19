@@ -1,0 +1,11 @@
+.plaza-apps {
+  display: flex;
+}
+
+.plaza-apps-app {
+  margin: 100px auto;
+}
+
+.plaza-apps-lights-container {
+  margin-bottom: 100px;
+}

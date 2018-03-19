@@ -1,0 +1,53 @@
+@def PLAZA_BG rgb(255, 255, 255);
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.plaza-plazaapp {}
+.plaza-plazaapp-header {}
+
+.plaza-plazaapp-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 24px 0 24px;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+
+@defmixin rainbow_text() {
+  background: url(/static/images/rainbow_text_bg.png) repeat center center;
+	background-size: contain;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+  -webkit-transition: text-shadow 1s ease;
+  -webkit-text-stroke: 1px white;
+}
+
+.plaza-rainbow-text {
+  @mixin rainbow_text();
+}
+
+.plaza-rainbow-header {
+	@mixin rainbow_text();
+  font-size: 128px;
+  text-align: center;
+  margin: 24px 0;
+}

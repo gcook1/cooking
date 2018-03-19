@@ -1,0 +1,7 @@
+.plaza-home p {
+  text-align: center;
+}
+
+.plaza-home a:link {
+    text-decoration: none;
+}

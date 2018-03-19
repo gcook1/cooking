@@ -1,0 +1,43 @@
+.goog-menu-button {
+  background: rgba(255,255,255,0);
+  cursor: pointer;
+  vertical-align: middle;
+  height: 64px;
+  width: 64px;
+}
+
+.goog-menu-button-hover,
+.goog-menu-button-focused {
+  background: rgba(255,255,255,0.2);
+  border-radius: 32px;
+  outline: none;
+}
+
+.goog-menu-button-active,
+.goog-menu-button-open {
+  background: rgba(255,255,255,0.4);
+  border-radius: 32px;
+  outline: none;
+}
+
+.goog-menu {
+  background: white;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+  cursor: default;
+  padding: 4px 0;
+  position: absolute;
+  z-index: 200;
+}
+
+.goog-menuitem {
+  color: #000;
+  font-size: 64px;
+  list-style: none;
+  padding: 4px 48px 4px 28px;
+  white-space: nowrap;
+}
+
+.goog-menuitem-highlight,
+.goog-menuitem-hover {
+  background: rgba(0,0,0,0.2);
+}

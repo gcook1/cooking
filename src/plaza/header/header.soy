@@ -1,0 +1,37 @@
+{namespace plaza.header.header}
+
+/**
+ * Main header for plaza pages.
+ * @param title The title to place in the header.
+ */
+{template .main}
+  <div class="{css plaza-header-container}">
+    <div class="{css plaza-header-navigation}">
+    </div>
+    <div class="{css plaza-header-title}">
+      <a href="/">{$title}</a>
+    </div>
+    <div class="{css plaza-header-logo}">
+      /* <i class="{css material-icons md-light md-64}">cake</i> */
+    </div>
+  </div>
+{/template}
+
+/**
+ * Menu button soy.
+ */
+{template .menubutton}
+  <div class="{css plaza-header-menubutton}">
+    <i class="{css material-icons md-light md-64}">menu</i>
+  </div>
+{/template}
+
+
+/**
+ * Logo button soy.
+ */
+{template .logobutton}
+  <div class="{css plaza-header-logobutton}">
+    <image src="static/images/favicon.png" />
+  </div>
+{/template}

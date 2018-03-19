@@ -1,0 +1,22 @@
+.plaza-jams-post {
+}
+
+.plaza-jams-spotifyembed {
+  background-color: black;
+  height: 80px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.plaza-jams-spotifyembed-loading {
+  margin-left: 268px;
+  position: absolute;
+  margin-top: 8px;
+  z-index: 100;
+}
+
+.plaza-jams-spotifyembed-iframe {
+  position: relative;
+  z-index: 110;
+}

@@ -1,0 +1,84 @@
+{namespace plaza.jams.jams}
+
+/**
+ * Main content for the jams app.
+ */
+{template .main}
+  <div class="{css plaza-jams}">
+	<div class="{css plaza-jams-post}">
+      <div class="{css plaza-rainbow-header}">
+        HomeCooked
+      </div>
+      <div class="{css plaza-jams-embedfolder}">
+    		<iframe 
+    			src="https://drive.google.com/embeddedfolderview?id=139SE0peHJ65JUDC7a0s6ck11q1wi6JIt#list" 
+    			style="width:100%; height:auto; border:0;"
+    			frameborder="0" 
+    			scrolling="no" 
+    			onload="resizeIframe(this)">
+    		</iframe>
+      </div>
+      <p>
+      </p>
+    </div>
+    <div class="{css plaza-jams-post}">
+      <div class="{css plaza-rainbow-header}">
+        La Tierra Muerta
+      </div>
+      <div class="{css plaza-jams-spotifyembed}">
+        <image
+          class="{css plaza-jams-spotifyembed-loading}"
+          src="static/images/loading.gif" />
+        <iframe
+          class="{css plaza-jams-spotifyembed-iframe}"
+          src="https://embed.spotify.com/?uri=spotify%3Auser%3A1233505353%3Aplaylist%3A77fsX5lnjMqiC42wGaNtj5"
+          width="600"
+          height="80"
+          frameborder="0"
+          allowtransparency="true">
+        </iframe>
+      </div>
+      <p>
+        3/14/17
+      </p>
+      <p>
+        I spent a summer interning in California. I biked a few miles to work in
+        perfectly cool desert mornings and back home between sticky asphalt and
+        desert sun. I lived alone in a one-room guest house and spoke to nearly
+        no one outside of work for three months. I only had myself to entertain
+        and explore. The desert-ish vibes did a lot for me and music is the only
+        way I've found to recreate that feeling since leaving. This playlist was
+        created then and there and still makes me feel the cool attunement to
+        life that only dead earth can.
+      </p>
+    </div>
+
+    <div class="{css plaza-jams-post}">
+      <div class="{css plaza-rainbow-header}">
+        I'll Try Anything Once
+      </div>
+      <div class="{css plaza-jams-spotifyembed}">
+        <image
+          class="{css plaza-jams-spotifyembed-loading}"
+          src="static/images/loading.gif" />
+        <iframe
+          class="{css plaza-jams-spotifyembed-iframe}"
+          src="https://embed.spotify.com/?uri=spotify%3Atrack%3A1k4OsQujxXPLij0ZsTFlMx"
+          width="600"
+          height="80"
+          frameborder="0"
+          allowtransparency="true">
+        </iframe>
+      </div>
+      <p>
+        3/14/17
+      </p>
+      <p>
+        This is my favorite song. A perfect piece by a perfect artist. I'll
+        probably get the first lyrics as a tattoo someday - "Ten decisions shape
+        your life, you'll be aware of five about."
+      </p>
+    </div>
+		
+  </div>	
+{/template}

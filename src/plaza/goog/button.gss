@@ -1,0 +1,21 @@
+.goog-button {
+  background: rgba(255,255,255,0);
+  cursor: pointer;
+  vertical-align: middle;
+  height: 64px;
+  width: 64px;
+}
+
+.goog-button-hover,
+.goog-button-focused {
+  background: rgba(255,255,255,0.1);
+  border-radius: 32px;
+  outline: none;
+}
+
+.goog-button-active,
+.goog-button-open {
+  background: rgba(255,255,255,0.2);
+  border-radius: 32px;
+  outline: none;
+}
