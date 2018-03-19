@@ -28,12 +28,11 @@ plaza.header.MainMenu = function() {
   this.menuJams_ = new goog.ui.MenuItem('jams');
   this.addChild(this.menuJams_, true);
 
-  this.menuAbout_ = new goog.ui.MenuItem('about');
-  this.addChild(this.menuAbout_, true);
-
   this.menuFilms_ = new goog.ui.MenuItem('films');
   this.addChild(this.menuFilms_, true);
-  
+
+  this.menuAbout_ = new goog.ui.MenuItem('about');
+  this.addChild(this.menuAbout_, true);
   
 };
 goog.inherits(plaza.header.MainMenu, goog.ui.Menu);
@@ -59,13 +58,13 @@ plaza.header.MainMenu.prototype.enterDocument = function() {
           goog.ui.Component.EventType.ACTION,
           this.handleJamsClick_)
       .listen(
-          this.menuAbout_,
-          goog.ui.Component.EventType.ACTION,
-          this.handleAboutClick_)
-	  .listen(
           this.menuFilms_,
           goog.ui.Component.EventType.ACTION,
           this.handleFilmsClick_)  
+      .listen(
+          this.menuAbout_,
+          goog.ui.Component.EventType.ACTION,
+          this.handleAboutClick_)
 };
 
 
@@ -95,6 +94,13 @@ plaza.header.MainMenu.prototype.handleJamsClick_ = function(e) {
   window.location.href = '/jams';
 }
 
+/**
+ * Handle a click on the films button.
+ * @param {goog.events.Event} e
+ */
+plaza.header.MainMenu.prototype.handleFilmsClick_ = function(e) {
+  window.location.href = '/films';
+}
 
 /**
  * Handle a click on the about button.
@@ -104,6 +110,4 @@ plaza.header.MainMenu.prototype.handleAboutClick_ = function(e) {
   window.location.href = '/about';
 }
 
-plaza.header.MainMenu.prototype.handleFilmsClick_ = function(e) {
-  window.location.href = '/films';
-}
+
